@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.SecondActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/txt_header_1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_header_experience"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/txt_pageNumber_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_pageNumber_2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_company"
+                    style="@style/edt_style_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/edt_company"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edt_position"
+                    style="@style/edt_style_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/edt_position"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/txt_textStyle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_domains" />
+
+                <Spinner
+                    android:id="@+id/spinner_domains"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_location"
+                style="@style/edt_style_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/edt_location"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView300"
+                    style="@style/txt_textStyle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_startDate" />
+
+                <DatePicker
+                    android:id="@+id/datePicker_startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="125dp"
+                    android:background="@color/platinum"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:spinnersShown="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView301"
+                    style="@style/txt_textStyle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_endDate" />
+
+                <DatePicker
+                    android:id="@+id/datePicker_endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="125dp"
+                    android:background="@color/platinum"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:spinnersShown="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/btn_style_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btn_addExp_onClick"
+                android:text="@string/btn_addExp"
+                app:backgroundTint="@color/cyan"
+                app:cornerRadius="10dp" />
+
+            <EditText
+                android:id="@+id/edtMultiLine_exp"
+                style="@style/edtMultiLine_style_1"
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start|top"
+                android:hint="@string/edtMultiLine_exp"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/btn_style_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btn_save_onClick"
+                android:text="@string/btn_save"
+                app:backgroundTint="@color/cyan"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

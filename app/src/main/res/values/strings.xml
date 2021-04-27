@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">1171655_assignment-2</string>
+    <string name="txt_header_info">General Information</string>
+    <string name="edt_firstName">First Name</string>
+    <string name="edt_lastName">Last Name</string>
+    <string name="edtEmail_email">Email</string>
+    <string name="edtPhone_phone">Phone</string>
+    <string name="edt_address">Address</string>
+    <string name="txt_dop">Date of Birth:</string>
+    <string name="txt_about">About you:</string>
+    <string name="btn_next_1">Next</string>
+    <string name="txt_header_experience">Experience</string>
+    <string name="txt_pageNumber">Page 1</string>
+    <string name="txt_pageNumber_2">Page 2</string>
+    <string name="edt_position">Title/Position</string>
+    <string name="edt_company">Company</string>
+    <string name="edt_location">Location</string>
+    <string name="txt_startDate">Start Date</string>
+    <string name="txt_endDate">End Date</string>
+    <string name="btn_addExp">Add</string>
+    <string name="edtMultiLine_about">Type here...</string>
+    <string name="edtMultiLine_exp">Experiences...</string>
+    <string name="btn_save">Save</string>
+    <string name="txt_domains">Domain</string>
+</resources>
